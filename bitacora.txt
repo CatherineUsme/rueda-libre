@@ -1,0 +1,13 @@
+URL: http://127.0.0.1:5500/index.html
+Protocolo: http
+Host:127.0.0.1:5500
+Ruta:/index.html
+Metodo: GET
+Estado: 304 Not Modified
+
+Promociones.html
+Status: 404 Not Found
+
+Html: maquetado- estrutura
+Css: stilos - paleta de colores del cliente
+JavaScript: comportamiento - enlaces
