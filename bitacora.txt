@@ -1,3 +1,5 @@
+Día 1 - Reto 1
+
 URL: http://127.0.0.1:5500/index.html
 Protocolo: http
 Host:127.0.0.1:5500
@@ -11,3 +13,15 @@ Status: 404 Not Found
 Html: maquetado- estrutura
 Css: stilos - paleta de colores del cliente
 JavaScript: comportamiento - enlaces
+
+Día 1 - Reto 4
+Archivo de Origen,Elemento / Destino,Ruta Escrita (Atributo src o href),Explicación de la Ruta
+index.html (Raíz),Logo (img/logo.png),"src=""img/logo.png""",Entra directamente a la carpeta img desde la raíz.
+index.html (Raíz),Página Tarifas,"href=""paginas/tarifas.html""",Entra a la carpeta paginas para buscar el archivo.
+index.html (Raíz),Página Reservas,"href=""paginas/reservas.html""",Entra a la carpeta paginas para buscar el archivo.
+paginas/tarifas.html (Subcarpeta),Logo (img/logo.png),"src=""../img/logo.png""",Sube un nivel (../) para salir de paginas y entra a img.
+paginas/tarifas.html (Subcarpeta),Inicio (index.html),"href=""../index.html""",Sube un nivel (../) para llegar al archivo principal en la raíz.
+paginas/tarifas.html (Subcarpeta),Página Reservas,"href=""reservas.html""","Como están en la misma carpeta, se llama directamente."
+paginas/reservas.html (Subcarpeta),Logo (img/logo.png),"src=""../img/logo.png""",Sube un nivel (../) para salir de paginas y entra a img.
+paginas/reservas.html (Subcarpeta),Inicio (index.html),"href=""../index.html""",Sube un nivel (../) para llegar al archivo principal en la raíz.
+paginas/reservas.html (Subcarpeta),Página Tarifas,"href=""tarifas.html""","Como están en la misma carpeta, se llama directamente."
