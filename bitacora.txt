@@ -25,3 +25,48 @@ paginas/tarifas.html (Subcarpeta),Página Reservas,"href=""reservas.html""","Com
 paginas/reservas.html (Subcarpeta),Logo (img/logo.png),"src=""../img/logo.png""",Sube un nivel (../) para salir de paginas y entra a img.
 paginas/reservas.html (Subcarpeta),Inicio (index.html),"href=""../index.html""",Sube un nivel (../) para llegar al archivo principal en la raíz.
 paginas/reservas.html (Subcarpeta),Página Tarifas,"href=""tarifas.html""","Como están en la misma carpeta, se llama directamente."
+
+Dia 2 - Reto 1
++-------------------------------------------------------+
+
+|                       <header>                        |
+
++-------------------------------------------------------+
+
+|                         <nav>                         |
+
++--------------------------+----------------------------+
+
+|                          |           <main>           |
+
+|                          |  +----------------------+  |
+
+|                          |  |      <article>       |  |
+
+|                          |  |  +----------------+  |  |
+
+|                          |  |  |    <header>    |  |  |
+
+|                          |  |  +----------------+  |  |
+
+|         <aside>          |  |  |    <figure>    |  |  |
+
+|                          |  |  +----------------+  |  |
+
+|                          |  |  |      <p>       |  |  |
+
+|                          |  |  +----------------+  |  |
+
+|                          |  |  |    <footer>    |  |  |
+
+|                          |  +--+----------------+--+  |
+
+|                          |  |      <section>       |  |
+
+|                          |  +----------------------+  |
+
++--------------------------+----------------------------+
+
+|                       <footer>                        |
+
++-------------------------------------------------------+
