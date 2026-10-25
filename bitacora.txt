@@ -95,3 +95,33 @@ N.º  | Campo                   | Dato de prueba (Incorrecto) | Resultado obteni
 
 8    | Políticas de alquiler   | (Checkbox desmarcado)       | Bloqueo de envío por checkbox requerido sin seleccionar.
 
+Dia 2 reto 4
+1. Revision de textos alternativos: le elimine la descripcion al logo por ser meramente decorativa y estar al lado del H1 y corregi la descripcion de las imagenes de los beneficios para que fueran mas dicientes, relacionadas con el beneficio.
+2. Jerarquia de encabezados: ok
+3. Textos de enlace: corregi en el index-Recorridos guiados el enlace de tarifas paso de consulte aqui a consulte tarifas
+4. Idioma del codumento: las tres paginas estaban "en" las pase a "es"
+5. Recorrido con teclado: ok
+
+Evaluación de contraste
+Color de Texto  | Color de Fondo | Códigos HEX              | Relación | ¿Cumple WCAG AA?
+----------------+----------------+----------------------+----------+---------------------------------
+Blanco          | Verde Ruta     | #FFFFFF / #1E7A4F    | 5.31 : 1 | apta texto normal
+Blanco          | Naranja Pedal  | #FFFFFF / #F39A2B    | 2.21 : 1 | no apta
+Azul Noche      | Naranja Pedal  | #14213D / #F39A2B    | 7.2 : 1  | apta texto normal
+Azul Noche      | Crema          | #14213D / #FAF6EF    | 14.82 :1 | apta texto normal
+Gris Asfalto    | Crema          | #5B6470 / #FAF6EF    | 5.56 : 1 | apta texto normal
+Verde Ruta      | Crema          | #1E7A4F / #FAF6EF    | 4.93 : 1 | apta texto normal
+Naranja Pedal   | Crema          | #F39A2B / #FAF6EF    | 2.05 : 1 | no apta
+Blanco          | Azul Noche     | #FFFFFF / #14213D    | 15.97: 1 | apta texto normal
+
+Mapa de uso de color
+Elemento            | Color asignado por cliente | Código HEX | Color de texto requerido | Contraste
+--------------------+----------------------------+------------+--------------------------+----------
+Fondo General       | Crema                      | #FAF6EF    | —                        | —
+Títulos / H1, H2    | Azul Noche                 | #14213D    | Sobre Crema              | 15.97 : 1
+Botón Principal     | Verde Ruta                 | #1E7A4F    | Blanco (#FFFFFF) (Bold)  | 5.31 : 1
+Botón Secundario    | Naranja Pedal              | #F39A2B    | Azul Noche (#14213D)     | 7.2 : 1
+Enlaces             | Verde Ruta                 | #1E7A4F    | Sobre Crema              | 4.93 : 1
+Texto Secundario    | Gris Asfalto               | #5B6470    | Sobre Crema              | 5.56: 1
+
+Enlace GitHub Pages: https://catherineusme.github.io/rueda-libre/
