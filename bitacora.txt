@@ -70,3 +70,28 @@ Dia 2 - Reto 1
 |                       <footer>                        |
 
 +-------------------------------------------------------+
+
+Dia 2 reto 2
+--> Plan y tipo de bicicleta como lista desplegable porque son las opciones que ofrece la empresa, se deben mostrar y permitir eligir una
+--> Recorrido como opciones unicas me parecio mas chevere que quedaran visibles las opciones por si se quiere hacer cambios de ultimo momento
+--> aceptacion de las politicas de alquiler como checkbox, porque se debe solo marcar que se acepta.
+
+Dia 2 reto 3 
+N.º  | Campo                   | Dato de prueba (Incorrecto) | Resultado obtenido
+
+1    | Nombre completo         | (Campo vacío)               | Campo requerido bloqueó el envío correctamente.
+
+2    | Documento de identidad  | 12345 (5 dígitos)           | Error de validación por longitud menor a la requerida.
+
+3    | Documento de identidad  | 12345abc (con letras)       | Error de validación por no cumplir el patrón.
+
+4    | Celular                 | 31234 (5 dígitos)           | Error de validación por longitud menor a la esperada.
+
+5    | Celular                 | 2123456789 (empieza por 2)  | Error de validación al no cumplir con el inicio en 3.
+
+6    | Fecha alquiler          | 2025-05-10 (fuera de rango) | Fecha bloqueada o rechazada por atributos min/max.
+
+7    | Cantidad de bicicletas  | 0 o número negativo         | Validación de valor mínimo no superada.
+
+8    | Políticas de alquiler   | (Checkbox desmarcado)       | Bloqueo de envío por checkbox requerido sin seleccionar.
+
