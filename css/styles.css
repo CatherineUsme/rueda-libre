@@ -1,0 +1,32 @@
+:root {
+  /* Colores */
+  --color-fondo: #FAF6EF;
+  --color-titulos: #14213D;
+  --color-texto-principal: #1A2536;
+  --color-boton-principal: #1E7A4F;
+  --color-boton-secundario: #F39A2B;
+  --color-enlaces: #1E7A4F;
+  --color-texto-secundario: #5B6470;
+
+  /* familias tipográficas */
+  --fuente-titulos: "Montserrat", sans-serif;
+  --fuente-textos: "Open Sans", sans-serif;
+
+  /* Espaciado: tres tamaños en rem */
+  --espacio-pequeno: 0.5rem;
+  --espacio-mediano: 1rem;
+  --espacio-grande: 2rem;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    font-weight: 400;
+    color: var(--color-texto-principal);
+    background-color: var(--color-fondo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    color: var(--color-titulos);
+}

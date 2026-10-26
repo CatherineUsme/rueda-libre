@@ -125,3 +125,8 @@ Enlaces             | Verde Ruta                 | #1E7A4F    | Sobre Crema     
 Texto Secundario    | Gris Asfalto               | #5B6470    | Sobre Crema              | 5.56: 1
 
 Enlace GitHub Pages: https://catherineusme.github.io/rueda-libre/
+
+Dia 3 reto 1
+Inspeccione el <p> de quienes somos
+--> propiedades heredades: font-family, font-weight, color,background-color
+--> Propiedades no heredadas: display, margin-blocks, unicode-bidi
