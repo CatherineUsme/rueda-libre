@@ -18,16 +18,26 @@
   --espacio-grande: 2rem;
 }
 
+/* tema tamaños */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* cuerpo general*/
 body {
     font-family: var(--fuente-textos);
     font-weight: 400;
     color: var(--color-texto-principal);
     background-color: var(--color-fondo);
 }
+
+/* estilo titulos*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    color: var(--color-titulos);
+}
+
 
 /* limita el ancho del main y lo centra */
 main{
@@ -38,36 +48,48 @@ main{
     padding-right: var(--espacio-mediano);
 }
 
+/* Portadas principal y secundarias*/
 .portada{
-    min-height: 70vh; /* limita el ancho del main y lo centra */
+    min-height: 50vh; 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    padding: var(--espacio-grande) 0;
+    gap: var(--espacio-mediano);
+    padding: var(--espacio-grande) var(--espacio-mediano);
     text-align: center;
+    background-color: var(--color-titulos);
+}
+
+.portada h1{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: var(--espacio-mediano);
 }
 
 .logo{
-    max-width: 50rem;
+    max-width: 20%;
     height: auto;
     margin-bottom: var(--espacio-mediano);
 }
 
 .portadasecundaria{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     padding: var(--espacio-mediano) 0;
     text-align: center;
+    background-color: var(--color-titulos);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--fuente-titulos);
-    font-weight: 700;
-    color: var(--color-titulos);
+.portadasecundaria h1{
+    color: var(--color-fondo);
+    font-size: 2.5rem;
+    margin-bottom: var(--espacio-mediano);
 }
+
+
 
 /* estilizacion del menu nav */
 #menu ul {
@@ -145,6 +167,7 @@ caption {
   display: none;
 }
 
+/* etiqueta nueva en la tabla */
 #celda_bicicleta_electrica {
  position: relative;
  display: flex;
@@ -165,8 +188,9 @@ caption {
 
 }
 
-/* Reservar ahora */
+/* Botones*/
 
+/* boton Reservar ahora */
 .btn-reservar {
     display: inline-block;
     padding: var(--espacio-pequeno) var(--espacio-mediano);
@@ -191,6 +215,7 @@ caption {
     color: var(--color-texto-principal);
 }
 
+/* boton whatsApp*/
 .btn-whatsapp {
     position: fixed;
     width: 60px;
@@ -222,7 +247,7 @@ caption {
     background-color: var(--color-boton-secundario);
 }
 
-/* campos formulario */
+/* Formulario */
 input, select, textarea {
     width: 100%;
     padding: var(--espacio-pequeno) var(--espacio-mediano);

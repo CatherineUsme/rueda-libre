@@ -140,3 +140,6 @@ solucion: ganar en la primera columna agregandole etiqueta a la segunda regla = 
 Dia 3 reto 3 paso 7
 Ancho total antes de cambiar box-sizing= 199.07 px
 Ancho total despues de cambiar box-sizing=237.047px
+
+Dia 3 Minireto 12 paso 7
+HAcer cierre de la semana
