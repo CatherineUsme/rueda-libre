@@ -136,3 +136,7 @@ Problema color <nav>: se debe a que la regla #menu a le gana es especifidad a la
 #menu a: especifidad ID (1,0,1)
 .activo: especifidad clase (0,1,0)
 solucion: ganar en la primera columna agregandole etiqueta a la segunda regla = #menu .activo
+
+Dia 3 reto 3 paso 7
+Ancho total antes de cambiar box-sizing= 199.07 px
+Ancho total despues de cambiar box-sizing=237.047px
