@@ -132,7 +132,7 @@ table {
 th, td {
   padding: var(--espacio-pequeno) var(--espacio-mediano);
   border: 1px solid var(--color-texto-secundario);       
-  text-align: center;                                   
+  text-align: left;                                   
 }
 
 th {
@@ -143,6 +143,26 @@ th {
 
 caption {
   display: none;
+}
+
+#celda_bicicleta_electrica {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+#nuevo {
+  display: inline-block;
+  padding: var(--espacio-pequeno) var(--espacio-mediano);
+  background-color: var(--color-boton-secundario);
+  position: static;
+  transform: none; 
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
 }
 
 /* Reservar ahora */
@@ -169,6 +189,37 @@ caption {
     outline-offset: 3px;
     background-color: var(--color-boton-secundario);
     color: var(--color-texto-principal);
+}
+
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Color oficial de WhatsApp */
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--color-boton-secundario); 
+    transform: translateY(-2px);  /* Efecto de elevación */
+}
+
+.btn-whatsapp:focus {
+    outline: 2px solid var(--color-boton-principal);
+    outline-offset: 3px;
+    background-color: var(--color-boton-secundario);
 }
 
 /* campos formulario */
