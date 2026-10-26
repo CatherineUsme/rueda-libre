@@ -5,7 +5,7 @@
   --color-texto-principal: #1A2536;
   --color-boton-principal: #1E7A4F;
   --color-boton-secundario: #F39A2B;
-  --color-enlaces: #1E7A4F;
+  --color-enlaces: #5B6470;
   --color-texto-secundario: #5B6470;
 
   /* familias tipográficas */
@@ -16,6 +16,10 @@
   --espacio-pequeno: 0.5rem;
   --espacio-mediano: 1rem;
   --espacio-grande: 2rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -29,4 +33,78 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-titulos);
     font-weight: 700;
     color: var(--color-titulos);
+}
+
+/* estilizacion del menu nav */
+#menu a { 
+    color: var(--color-enlaces);
+    text-decoration: none;
+    transition: color 0.3s ease;
+ }
+
+#menu a.activo { 
+    color: var(--color-boton-principal); 
+    font-weight: 600; 
+}
+
+#menu a:hover { 
+    color: var(--color-boton-principal); 
+}
+
+#menu a:focus{
+    outline: 2px solid var(--color-boton-principal);
+    outline-offset: 3px;
+    color: var(--color-boton-principal);
+}
+
+/* Reservar ahora */
+
+.btn-reservar {
+    display: inline-block;
+    padding: var(--espacio-pequeno) var(--espacio-mediano);
+    background-color: var(--color-boton-principal);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: var(--color-boton-secundario);
+    color: var(--color-texto-principal);
+    transform: traslateY(-2px);
+}
+
+.btn-reservar:focus {
+    outline: 2px solid var(--color-boton-principal);
+    outline-offset: 3px;
+    background-color: var(--color-boton-secundario);
+    color: var(--color-texto-principal);
+}
+
+/* campos formulario */
+input, select, textarea {
+    width: 100%;
+    padding: var(--espacio-pequeno) var(--espacio-mediano);
+    margin-bottom: var(--espacio-mediano);
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 4px;
+    font-family: var(--fuente-textos);
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;    
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px; /* Espacio entre el circulito y el texto */
+  cursor: pointer;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none; /* Quitamos el contorno por defecto del navegador */
+  border-color: var(--color-boton-principal);
+  box-shadow: 0 0 0 3px rgba(30, 122, 79, 0.2); /* Sombra exterior de reemplazo */
 }

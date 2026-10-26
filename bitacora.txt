@@ -126,7 +126,13 @@ Texto Secundario    | Gris Asfalto               | #5B6470    | Sobre Crema     
 
 Enlace GitHub Pages: https://catherineusme.github.io/rueda-libre/
 
-Dia 3 reto 1
+Dia 3 reto 1 paso 7
 Inspeccione el <p> de quienes somos
 --> propiedades heredades: font-family, font-weight, color,background-color
 --> Propiedades no heredadas: display, margin-blocks, unicode-bidi
+
+Dia 3 reto 2 paso 2
+Problema color <nav>: se debe a que la regla #menu a le gana es especifidad a la clase .activo, porque un ID tiene mayor peso que una clase
+#menu a: especifidad ID (1,0,1)
+.activo: especifidad clase (0,1,0)
+solucion: ganar en la primera columna agregandole etiqueta a la segunda regla = #menu .activo

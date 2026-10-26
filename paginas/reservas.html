@@ -21,11 +21,11 @@
         </div>
         <h1>Rueda Libre | Alquiler de bicicletas en Medellín</h1>
         <h2>Viví Medellín sobre dos ruedas</h2>
-        <nav>
+        <nav id="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/tarifas.html">Tarifas</a></li>
-                <li><a href="../paginas/reservas.html">Reservas</a></li>
+                <li><a href="../paginas/reservas.html" class="activo">Reservas</a></li>
             </ul>
         </nav>
     </header>
@@ -93,17 +93,13 @@
 
                     <label for="Comentarios">Alguna información adicional:</label><br>
                     <textarea id="Comentarios" name="comentarios" rows="4" cols="50" placeholder="comentarios" maxlength="300"></textarea>
-                                   
                 </fieldset>
                 <fieldset>
                     <legend>Confirmación</legend>
                     <input type="checkbox" id="confirmacion" name="confirmacion" value="acepto" required title="Debes aceptar las políticas de alquiler para continuar">
                     <label for="confirmacion">Acepto las políticas de alquiler</label>
-                    
-
                 </fieldset>
-                
-                <button type="submit">Reservar</button>
+                <button type="submit" class="btn-reservar">Reservar</button>
 
     </main>
 
