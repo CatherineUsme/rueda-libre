@@ -143,3 +143,16 @@ Ancho total despues de cambiar box-sizing=237.047px
 
 Dia 3 Minireto 12 paso 7
 HAcer cierre de la semana
+
+
+-------------   Semana 2 --------------
+
+-------- Día 1 ------------
+
+--- Minireto 1 ---
+Al estrecharse la pantalla los enlaces del menú bajan de linea en lugar de apilonarse.
+
+Cierre:
+-> En el diseño del heater tuve que incluir un diseño adicional para el logo
+-> En el menu ya contaba con contenedor flexible.
+-> Organice el footer bonito
