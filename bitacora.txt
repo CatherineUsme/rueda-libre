@@ -149,10 +149,21 @@ HAcer cierre de la semana
 
 -------- Día 1 ------------
 
---- Minireto 1 ---
+------ Minireto 1 ------
+Paso 5:
 Al estrecharse la pantalla los enlaces del menú bajan de linea en lugar de apilonarse.
 
 Cierre:
 -> En el diseño del heater tuve que incluir un diseño adicional para el logo
 -> En el menu ya contaba con contenedor flexible.
 -> Organice el footer bonito
+
+------ Minireto 2 -------
+Paso 6:
+->Pantalla 1280px: 4 Columnas
+->Pantalla 900px: 3 Columnas
+->Panyalla 500px: 1 columna
+
+Cierre:
+-> aplique el grid cobre la seccion y me tomo el headear, tuve que incluir un div para agrupar los articles
+-> Reutilice la configuracion del boton de reservas, agregandole el que me llenara el contenedor al 10%

@@ -48,7 +48,7 @@ main{
     padding-right: var(--espacio-mediano);
 }
 
-/*Organizcion footer*/
+/*Organizacion footer*/
 footer{
   display:flex;
   flex-direction: row;
@@ -75,11 +75,13 @@ footer h3{
     padding: var(--espacio-grande) var(--espacio-mediano);
     text-align: center;
     background-color: var(--color-titulos);
+    color: #fff;
+    font-size: 1.8rem;
 }
 
 .portada h1{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 8rem;
     margin-bottom: var(--espacio-mediano);
 }
 
@@ -97,6 +99,8 @@ footer h3{
     padding: var(--espacio-mediano) 0;
     text-align: center;
     background-color: var(--color-titulos);
+    color: #fff;
+    font-size: 1.8rem;
 }
 
 .portadasecundaria h1{
@@ -141,7 +145,7 @@ footer h3{
     color: var(--color-boton-principal);
 }
 
-/* tarjetas de servicio */
+/* tarjetas de servicios */
 .servicio {
   border: 3px solid var(--color-boton-principal); 
   border-radius: 8px;                             
@@ -158,6 +162,42 @@ footer h3{
   display: block;
   border-radius: 4px; 
   margin-bottom: var(--espacio-pequeno); /* Separación entre la imagen y el texto de la tarjeta */
+}
+
+/*tarjetas de la flota*/
+#flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: var(--espacio-mediano); 
+    padding: var(--espacio-grande) var(--espacio-mediano);
+}
+
+#flota article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid var(--color-boton-principal); 
+    border-radius: 8px; 
+    padding: var(--espacio-mediano); 
+    background-color: var(--color-fondo);
+    overflow: hidden; /*oculte todo el contenido que se desborde*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+#flota img {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 4px; 
+    margin-bottom: var(--espacio-pequeno); 
+}
+
+#flota a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: var(--espacio-pequeno) var(--espacio-mediano);
+
+
 }
 
 /* tablas*/
