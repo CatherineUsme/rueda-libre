@@ -38,6 +38,23 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-titulos);
 }
 
+/* Header*/
+.header-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacio-pequeno) var(--espacio-mediano);
+    text-align: center;
+    background-color: var(--color-titulos);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.logo{
+    max-width: 10%;
+    margin-bottom: var(--espacio-pequeno);
+}
 
 /* limita el ancho del main y lo centra */
 main{
@@ -52,7 +69,7 @@ main{
 footer{
   display:flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding: var(--espacio-mediano) 0;
   text-align: center;
@@ -63,52 +80,6 @@ footer{
 footer h3{
   color: #fff;
 }
-
-/* Portadas principal y secundarias*/
-.portada{
-    min-height: 50vh; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: var(--espacio-mediano);
-    padding: var(--espacio-grande) var(--espacio-mediano);
-    text-align: center;
-    background-color: var(--color-titulos);
-    color: #fff;
-    font-size: 1.8rem;
-}
-
-.portada h1{
-    color: #fff;
-    font-size: 8rem;
-    margin-bottom: var(--espacio-mediano);
-}
-
-.logo{
-    max-width: 20%;
-    height: auto;
-    margin-bottom: var(--espacio-mediano);
-}
-
-.portadasecundaria{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: var(--espacio-mediano) 0;
-    text-align: center;
-    background-color: var(--color-titulos);
-    color: #fff;
-    font-size: 1.8rem;
-}
-
-.portadasecundaria h1{
-    color: var(--color-fondo);
-    font-size: 2.5rem;
-    margin-bottom: var(--espacio-mediano);
-}
-
 
 
 /* estilizacion del menu nav */
@@ -125,13 +96,13 @@ footer h3{
 }
 
 #menu a { 
-    color: var(--color-enlaces);
+    color: var(--color-fondo);
     text-decoration: none;
     transition: color 0.3s ease;
  }
 
 #menu a.activo { 
-    color: var(--color-boton-principal); 
+    color: var(--color-boton-secundario); 
     font-weight: 600; 
 }
 
@@ -145,7 +116,30 @@ footer h3{
     color: var(--color-boton-principal);
 }
 
+/*portada*/
+#portada {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--espacio-mediano);
+    align-items: center;
+    padding: var(--espacio-grande) var(--espacio-mediano);
+}
+
+#portada img {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* tarjetas de servicios */
+#servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: var(--espacio-mediano); 
+    padding: var(--espacio-grande) var(--espacio-mediano);
+}
+
 .servicio {
   border: 3px solid var(--color-boton-principal); 
   border-radius: 8px;                             
@@ -158,7 +152,7 @@ footer h3{
 
 .servicio img{
   width: 100%;       /* Ocupa todo el ancho de la tarjeta */
-  height: auto;      /* Mantiene la proporción para que no se deforme */
+  height: 200px;      /* Mantiene la proporción para que no se deforme */
   display: block;
   border-radius: 4px; 
   margin-bottom: var(--espacio-pequeno); /* Separación entre la imagen y el texto de la tarjeta */
@@ -200,7 +194,43 @@ footer h3{
 
 }
 
-/* tablas*/
+/*tarjetas recorridos*/
+#recorridos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: var(--espacio-mediano); 
+    padding: var(--espacio-grande) var(--espacio-mediano);n;
+}
+
+#recorridos article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid var(--color-boton-principal); 
+    border-radius: 8px; 
+    padding: var(--espacio-mediano); 
+    background-color: var(--color-fondo);
+    overflow: hidden; /*oculte todo el contenido que se desborde*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+
+#recorridos img {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 4px; 
+    margin-bottom: var(--espacio-pequeno); 
+}
+
+#recorridos a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: var(--espacio-pequeno) var(--espacio-mediano);
+}
+
+
+/* tabla tarifas*/
 table {
   width: 100%;
   border-collapse: collapse; /* Une los bordes dobles de la tabla en una sola línea*/
@@ -242,7 +272,6 @@ caption {
   font-weight: 600;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-
 }
 
 /* Botones*/
@@ -282,7 +311,7 @@ caption {
     background-color: #25d366; /* Color oficial de WhatsApp */
     color: #ffffff;
     border-radius: 50%;
-    text-align: center;
+    align-items: center;
     font-size: 35px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
@@ -302,6 +331,17 @@ caption {
     outline: 2px solid var(--color-boton-principal);
     outline-offset: 3px;
     background-color: var(--color-boton-secundario);
+}
+
+/*Pagina Reservas*/
+
+#reservas {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    gap: var(--espacio-mediano);
+    align-items: start;
+    padding: var(--espacio-grande) var(--espacio-mediano);
+    background-color: var(--color-fondo);
 }
 
 /* Formulario */
@@ -347,6 +387,17 @@ fieldset {
   padding: var(--espacio-mediano);
   border: 1px solid var(--color-texto-secundario);
   border-radius: 4px;
+}
+
+.fila-formulario {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben */
+  gap: var(--espacio-mediano); /* Espacio entre los elementos */
+}
+
+.campo {
+  flex: 1;     /* Hace que ambos campos crezcan por igual y abarquen todo el ancho */
+  width: 100%;
 }
 
 button[type="submit"] {

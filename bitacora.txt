@@ -167,3 +167,21 @@ Paso 6:
 Cierre:
 -> aplique el grid cobre la seccion y me tomo el headear, tuve que incluir un div para agrupar los articles
 -> Reutilice la configuracion del boton de reservas, agregandole el que me llenara el contenedor al 10%
+
+------ Minireto 3 -------
+Paso 5:
+->Header: flex, tipo row para organizar logo y menu en las dos esquinas.
+->menu: nav, flex tipo row para organizar los 3 botones en una sola linea horizontal.
+->portada: grid, para dividir el espacio en la proporcion 2:1
+->servicios: grid, para crear tarjeticas autoajustables
+->flota:grid, para crear tarjeticas autoajustables
+->flota-articulo: flex, tipo column para cuadrar los 3 items.
+->recorridos: grid, para crear tarjeticas autoajustables
+->recorridos-article:flex, tipo column para cuadrar los 3 items.
+->reservas: grid, para dividir el espacio en la proporcion 2:1
+->fila formulario: flex, tipo row con wrap por si se desborda salte de fila.
+->Footer: flex, tipo row para tener solo una linea con 3 columnas.
+
+Cierre:
+-> Tuve una confusión en la terminología con portada, tuve que volver a estilizar el header
+-> Me di cuenta que el H1 no iba en el header

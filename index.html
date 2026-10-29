@@ -10,19 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@700&family=Open+Sans:ital,wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- enlace hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header class="portada">
+    <header class="header-principal">
         <img src="img/logo.jpeg" class="logo" alt="">
-        <div>
-            <h1>Rueda Libre </h1>
-            <p>Alquiler de bicicletas en Medellín</p>
-        </div>
         <nav id="menu">
             <ul>
                 <li><a href="index.html" class="activo">Inicio</a></li>
@@ -32,6 +29,18 @@
         </nav>
     </header>
     <main>
+        <section id="portada">
+            <div>
+                <div>
+                    <h1>Rueda Libre </h1>
+                    <p>Alquiler de bicicletas en Medellín</p>
+                </div>
+                <h2>Explora Medellín a tu propio ritmo</h2>
+                <p>Alquila la bicicleta perfecta para tu aventura urbana o de montaña. Fácil, rápido y con la mejor tarifa de la ciudad.</p>
+                <p>Explora nuestras <a href="paginas/tarifas.html">tarifas</a> y reserva tu bicicleta hoy mismo para disfrutar de la libertad de recorrer Medellín a tu propio ritmo.</p>
+            </div>
+            <img src="img/Img_portada.jpg" alt="Bicicleta en Medellín: disfruta de la ciudad a tu ritmo">
+        </section>
         <section>
             <header>
                 <h2>¿Quienes somos?</h2>
@@ -52,33 +61,35 @@
                 <h2>Servicios</h2>
             </header>
             <p>No te lo pierdas, <a href="/paginas/reservas.html" class="btn-reservar">Reserva ahora</a></p>
-            <article class="servicio">
-                <h3>Alquiler de Bicicletas</h3>
-                <img src="img/sostenibilidad.jpg" width="400" alt="ciclopase: Recorre Medellín sin huella de carbono">
-                <p> ¿Querés pedalear libremente por la ciudad? Ponemos a tu disposición una flota de bicicletas modernas, cómodas y en perfecto estado mecánico, ideales tanto para trayectos urbanos como para paseos recreativos.</p>
-                <ul>
-                    <li><strong>Qué incluye: </strong>Bicicleta urbana o de montaña, casco de seguridad certificado y guaya de seguridad antirrobo.</li>
-                    <li><strong>Modalidades: </strong>Tarifas flexibles por horas, días completos o planes semanales.</li>
-                </ul>
-                </li>
-            </article>
-            <article class="servicio">
-                <h3>Recorridos Guiados</h3>
-                <img src="img/mirador.jpg" width="400" alt="Mirador de Medellín: parada tour guiado">
-                <p> Conocé Medellín de la mano de expertos locales que conocen cada rincón, historia y secreto de la ciudad. Diseñamos rutas seguras y memorables para todos los niveles.</p>
-                <ul>
-                    <li><strong>Experiencias disponibles: </strong>Río y parques, Sabores del barrio y Reto las palmas</li>
-                    <li><strong><a href="/paginas/tarifas.html#tarifas_recorridos_guiados">Consulta sus tarifas</a></strong></li>
-                </ul>
-            </article>
-            <article class="servicio">
-                <h3>Taller Básico y Asistencia en Ruta</h3>
-                <img src="img/taller_biciletas.jpg" width="400" alt="Taller de bicicletas">
-                <p> Queremos que tu experiencia sea 100% segura y sin preocupaciones. Si tu bicicleta necesita un ajuste rápido o tienes algún imprevisto menor mientras ruedas con nosotros, te cubrimos las espaldas.</p>
-                <ul>
-                    <li><strong>Qué incluye: </strong>Ajuste de frenos y cambios, calibración y presión de llantas, lubricación de cadena y soporte técnico rápido para que sigas rodando sin demoras.</li>
-                </ul>
-            </article>
+            <div id="servicios">
+                <article class="servicio">
+                    <h3>Alquiler de Bicicletas</h3>
+                    <img src="img/sostenibilidad.jpg" width="400" alt="ciclopase: Recorre Medellín sin huella de carbono">
+                    <p> ¿Querés pedalear libremente por la ciudad? Ponemos a tu disposición una flota de bicicletas modernas, cómodas y en perfecto estado mecánico, ideales tanto para trayectos urbanos como para paseos recreativos.</p>
+                    <ul>
+                        <li><strong>Qué incluye: </strong>Bicicleta urbana o de montaña, casco de seguridad certificado y guaya de seguridad antirrobo.</li>
+                        <li><strong>Modalidades: </strong>Tarifas flexibles por horas, días completos o planes semanales.</li>
+                    </ul>
+                    </li>
+                </article>
+                <article class="servicio">
+                    <h3>Recorridos Guiados</h3>
+                    <img src="img/mirador.jpg" width="400" alt="Mirador de Medellín: parada tour guiado">
+                    <p> Conocé Medellín de la mano de expertos locales que conocen cada rincón, historia y secreto de la ciudad. Diseñamos rutas seguras y memorables para todos los niveles.</p>
+                    <ul>
+                        <li><strong>Experiencias disponibles: </strong>Río y parques, Sabores del barrio y Reto las palmas</li>
+                        <li><strong><a href="/paginas/tarifas.html#tarifas_recorridos_guiados">Consulta sus tarifas</a></strong></li>
+                    </ul>
+                </article>
+                <article class="servicio">
+                    <h3>Taller Básico y Asistencia en Ruta</h3>
+                    <img src="img/taller_biciletas.jpg" width="400" alt="Taller de bicicletas">
+                    <p> Queremos que tu experiencia sea 100% segura y sin preocupaciones. Si tu bicicleta necesita un ajuste rápido o tienes algún imprevisto menor mientras ruedas con nosotros, te cubrimos las espaldas.</p>
+                    <ul>
+                        <li><strong>Qué incluye: </strong>Ajuste de frenos y cambios, calibración y presión de llantas, lubricación de cadena y soporte técnico rápido para que sigas rodando sin demoras.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
         <section>
             <header>
@@ -138,6 +149,33 @@
         </section>
         <section>
             <header>
+                <h2>Conoce nuestros recorridos</h2>    
+            </header>
+            <div id="recorridos">
+                <article>
+                    <h3>Río y parques</h3>
+                    <img src="img/RecorridoRio.jpg" alt="Recorrido guido por el rio y los principales parques de Medellín">
+                    <p> Disfruta un recorrido tranquilo de 12 km durante 2 horas por Medellín, explorando sus parques, zonas verdes y paisajes urbanos. Ideal para principiantes y amantes de la naturaleza.</p>
+                    <p><strong>Nivel: </strong>Fácil</p>
+                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
+                </article>
+                <article>
+                    <h3>Sabores del barrio</h3>
+                    <img src="img/SaboresBarrio.jpg" alt="Bicicleta Urbana plegable: ideal para transporte público">
+                    <p> Recorre 18 km en 3 horas para descubrir la cultura, los sabores y las tradiciones de los barrios de Medellín. Una experiencia de dificultad media que combina aventura y gastronomía local.</p>
+                    <p><strong>Nivel: </strong>Medio</p>
+                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
+                </article>
+                <article>
+                    <h3>Reto palmas</h3>
+                    <img src="img/Retopalmas.webp" alt="Bicicleta de montaña Trail">
+                    <p> Acepta el desafío de pedalear 25 km durante 4 horas por una ruta exigente hacia Las Palmas. Ideal para ciclistas experimentados que buscan superar sus límites y disfrutar de los paisajes montañosos de Medellín.</p>
+                    <p><strong>Nivel: </strong>Díficil</p>
+                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
+                </article>
+            </div>
+        <section>
+            <header>
                 <h2>¿Cómo empezar a rodar con nosotros?</h2>
             </header>
             <ol>
@@ -154,9 +192,12 @@
             <p>Estamos ubicados en el corazón de la ciudad, justo en Ciudad del Río. Es el punto de partida perfecto para conectar con las ciclovías y los senderos más bonitos. ¡Pásate a saludarnos! <a href="https://www.google.com/maps/place/Cdad.+del+Rio,+El+Poblado,+Medell%C3%ADn,+El+Poblado,+Medell%C3%ADn,+Antioquia/@6.2202706,-75.5788565,16z/data=!4m6!3m5!1s0x8e442832d452b871:0xc105c7e1e85a702d!8m2!3d6.2208376!4d-75.573519!16s%2Fg%2F1hhx8xx3p?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ubicación Exacta</a></p>
         </section>      
     </main>
-    <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp" rel="noopener noreferrer"><i class="fab-brands fa-whatsapp"></i></a>
     <footer>
-        <h3>Rueda Libre | Alquiler de bicicletas en Medellín</h3>
+        <div>
+            <h3>Rueda Libre</h3>  
+            <p>Alquiler de bicicletas en Medellín</p> 
+        </div>        
         <p><a href="mailto:info@ruedalibre.com">Contactános</a></p>
         <p>© 2024 Rueda Libre. Todos los derechos reservados.</p>
     </footer>

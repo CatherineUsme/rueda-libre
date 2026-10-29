@@ -15,12 +15,8 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="portadasecundaria">
+    <header class="header-principal">
         <img src="../img/logo.jpeg" alt="" class="logo">
-        <div>
-            <h1>Rueda Libre </h1>
-            <p>Alquiler de bicicletas en Medellín</p>
-        </div>     
         <nav id="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -31,79 +27,102 @@
     </header>
 
     <main>
-        <section>
-            <header>
-                <h2>Reserva tu bicicleta</h2>
-            </header>
-            <p>¿Tienes dudas sobre nuestras reservas? <a href="mailto:info@ruedalibre.com">Contactános</a></p>
-            <h3>Horario de atención</h3>
-            <dl>
-                <dt>lunes a viernes</dt>
-                <dd>7:00 a. m. a 7:00 p. m.</dd>
-                <dt>sábado, domingo y festivos</dt>
-                <dd>6:00 a. m. a 2:00 p. m.</dd>
-            </dl>
-        </section>
-        <section>
-            <header>
-                <h2>Formulario de reserva</h2>
-            </header>
-            <form method="post" action="#">
-                <fieldset>
-                    <legend>Tus datos</legend>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required minlength="3"><br>
-                    <label for="documento">Documento de identidad:</label>
-                    <input type="text" inputmode="numeric" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Debe tener entre 6 y 10 dígitos numéricos"><br>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" required maxlength="10" pattern="3[0-9]{9}" title="Debe comenzar con 3 y tener 10 dígitos numéricos">
-                </fieldset>
-                 <fieldset>
-                    <legend>Tus alquiler</legend>
-                    <label for="fecha">Fecha alquiler:</label>
-                    <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31"><br>
-                    <label for="bicicleta">Tipo de bicicleta:</label>
-                    <select id="bicicleta" name="bicicleta" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="urbana">Bicicleta urbana</option>
-                    <option value="montaña">Bicicleta de montaña</option>
-                    <option value="electrica">Bicicleta eléctrica</option>
-                    </select><br>
-                    <label for="plan">Plan:</label>
-                    <select id="plan" name="plan" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="hora">Plan por hora</option>
-                    <option value="mediodia">Plan por medio día (4h)</option>
-                    <option value="dia">Plan por día</option>
-                    </select>
-                    <label for="cantidad">Cantidad de bicicletas:</label>
-                    <input type="number" id="cantidad" name="cantidad" required min="1" max="6"><br>
-                    
-                    <p>¿Realizaras algun recorrido guiado?</p>
-                    <input type="radio" id="ninguno" name="recorrido" value="ninguno" required>
-                    <label for="ninguno">Ninguno</label>
-                    <input type="radio" id="rioyparques" name="recorrido" value="rioyparques">
-                    <label for="rioyparques">Río y parques</label>
-                    <input type="radio" id="SaboresdeBarrio" name="recorrido" value="SaboresdeBarrio">
-                    <label for="SaboresdeBarrio">Sabores de Barrio</label>
-                    <input type="radio" id="RetoLasPalmas" name="recorrido" value="RetoLasPalmas">
-                    <label for="RetoLasPalmas">Reto Las Palmas</label>
-
-                    <label for="Comentarios">Alguna información adicional:</label>
-                    <textarea id="Comentarios" name="comentarios" rows="4" cols="50" placeholder="comentarios" maxlength="300"></textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>Confirmación</legend>
-                    <input type="checkbox" id="confirmacion" name="confirmacion" value="acepto" required title="Debes aceptar las políticas de alquiler para continuar">
-                    <label for="confirmacion">Acepto las políticas de alquiler</label>
-                </fieldset>
-                <button type="submit">Reservar</button>
+        <h1>Realiza tu reserva</h1>
+        <section id="reservas">
+            <section>
+                <header>
+                    <h2>Formulario de reserva</h2>
+                </header>
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Tus datos</legend>
+                        <div class="fila-formulario">
+                            <div class="campo">
+                                <label for="documento">Documento de identidad:</label>
+                                <input type="text" inputmode="numeric" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Debe tener entre 6 y 10 dígitos numéricos">
+                            </div>
+                            <div class="campo">
+                                <label for="celular">Celular:</label>
+                                <input type="tel" id="celular" name="celular" required maxlength="10" pattern="3[0-9]{9}" title="Debe comenzar con 3 y tener 10 dígitos numéricos">
+                            </div>
+                        </div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3"><br>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tus alquiler</legend>
+                        <div class="fila-formulario">
+                            <div class="campo">
+                                <label   label for="fecha">Fecha alquiler:</label>
+                                <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31"><br>
+                            </div>
+                            <div class="campo">
+                                <label for="bicicleta">Tipo de bicicleta:</label>
+                                <select id="bicicleta" name="bicicleta" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="urbana">Bicicleta urbana</option>
+                                <option value="montaña">Bicicleta de montaña</option>
+                                <option value="electrica">Bicicleta eléctrica</option>
+                                </select><br>
+                            </div>
+                        </div>
+                        <div class="fila-formulario">
+                            <div class="campo">
+                                <label for="plan">Plan:</label>
+                                <select id="plan" name="plan" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="hora">Plan por hora</option>
+                                <option value="mediodia">Plan por medio día (4h)</option>
+                                <option value="dia">Plan por día</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="cantidad">Cantidad de bicicletas:</label>
+                                <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
+                            </div>
+                        </div>  
+                        <p>¿Realizaras algun recorrido guiado?</p>
+                        <input type="radio" id="ninguno" name="recorrido" value="ninguno" required>
+                        <label for="ninguno">Ninguno</label>
+                        <input type="radio" id="rioyparques" name="recorrido" value="rioyparques">
+                        <label for="rioyparques">Río y parques</label>
+                        <input type="radio" id="SaboresdeBarrio" name="recorrido" value="SaboresdeBarrio">
+                        <label for="SaboresdeBarrio">Sabores de Barrio</label>
+                        <input type="radio" id="RetoLasPalmas" name="recorrido" value="RetoLasPalmas">
+                        <label for="RetoLasPalmas">Reto Las Palmas</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Confirmación</legend>
+                        <label for="Comentarios">Alguna información adicional:</label>
+                        <textarea id="Comentarios" name="comentarios" rows="4" cols="50" placeholder="comentarios" maxlength="300"></textarea>
+                        <input type="checkbox" id="confirmacion" name="confirmacion" value="acepto" required title="Debes aceptar las políticas de alquiler para continuar">
+                        <label for="confirmacion">Acepto las políticas de alquiler</label><br>
+                        <button type="submit">Reservar</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <header>
+                    <h3>Horario de atención</h3>
+                </header>
+                <dl>
+                    <dt>lunes a viernes</dt>
+                    <dd>7:00 a. m. a 7:00 p. m.</dd>
+                    <dt>sábado, domingo y festivos</dt>
+                    <dd>6:00 a. m. a 2:00 p. m.</dd>
+                </dl>
+                <p>¿Tienes dudas sobre nuestras reservas? <a href="mailto:info@ruedalibre.com">Contactános</a></p>
+            </section>
+       </section>
     </main>
     <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
     <footer>
-        <h3>Rueda Libre | Alquiler de bicicletas en Medellín</h3>
+        <div>
+            <h3>Rueda Libre</h3>  
+            <p>Alquiler de bicicletas en Medellín</p> 
+        </div>
         <p><a href="mailto:info@ruedalibre.com">Contactános</a></p>
         <p>© 2024 Rueda Libre. Todos los derechos reservados.</p>
     </footer>
