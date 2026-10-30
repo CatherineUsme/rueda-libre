@@ -185,3 +185,17 @@ Paso 5:
 Cierre:
 -> Tuve una confusión en la terminología con portada, tuve que volver a estilizar el header
 -> Me di cuenta que el H1 no iba en el header
+-> Para hacer el reto de Mobile First me apoye de la IA, pidiendole que me dijera cuales eran los cambios y porque
+
+------ Minireto 4 -------
+Paso 5:
+->Header: tuve que cambiar el flex direction de row a column para Mobile
+->Logo: le cambie la unidad de tamaño de % a un max-width porque con el porcentaje me quedaba muy pequeño en Mobile
+->Footer: tuve que cambiar el flex direction de row a column para Mobile y agregarle un Gap para que no se apeñuzcaran
+->Portada: tuve que cambiarlo de grid a flex column para mobile fuera hacia abajo
+->servicios, flota, recorridos: cambien la cantidad de columnas a una sola en mobile y en las medias query a las automaticas.
+->tablas: las tuve que meter dentro de un contenedor y aplicarles overflow-x para el desplazamiento horizontal en mobile
+->Reservas: tuve que cambiarlo de grid a flex column para mobile fuera hacia abajo
+
+
+
