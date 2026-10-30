@@ -199,3 +199,12 @@ Paso 5:
 
 
 
+-------- Día 2 ------------
+
+------ Minireto 5 ------
+Paso 5:
+-> Tiempo invertido: 30 minutos
+-> Lineas CSS: 4 lineas para el display como tal, 9 lineas en cada articulo y una linea en las imagenes. mas una linea en la media query.
+-> Clases Bootstrap:las 3 basicas de container, row y col, mas: img-fluid y card
+-> Que se me dio fácil: entender las tres divisiones principales y la nomenclatura de los tamaños
+-> Que me costó: la parte visual incluir card y flex en cada tarjeta
