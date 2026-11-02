@@ -208,3 +208,13 @@ Paso 5:
 -> Clases Bootstrap:las 3 basicas de container, row y col, mas: img-fluid y card
 -> Que se me dio fácil: entender las tres divisiones principales y la nomenclatura de los tamaños
 -> Que me costó: la parte visual incluir card y flex en cada tarjeta
+
+------ Minireto 6 ------
+Paso 6:
+->d-nome: propiedad del display para ocultar 
+->display-4:para encabezados grandes y llamativos.
+->lead: destaca un parrafo sobre el texto normal de una página
+->img-fluid: imagen responsive, la imagen se ajusta automaticamente al tamaño del contenedor
+->shadow-sm: sombra ligera small shadow
+->object-fit-cover: rellenar todo el contenedor con la imagen o video, pero manteniendo la relacion de aspecto, recortando el exceso
+->rounded-2:redondear
