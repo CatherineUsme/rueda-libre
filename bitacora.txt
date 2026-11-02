@@ -210,7 +210,7 @@ Paso 5:
 -> Que me costó: la parte visual incluir card y flex en cada tarjeta
 
 ------ Minireto 6 ------
-Paso 6:
+Paso 6: clases consultadas
 ->d-nome: propiedad del display para ocultar 
 ->display-4:para encabezados grandes y llamativos.
 ->lead: destaca un parrafo sobre el texto normal de una página
@@ -218,3 +218,13 @@ Paso 6:
 ->shadow-sm: sombra ligera small shadow
 ->object-fit-cover: rellenar todo el contenedor con la imagen o video, pero manteniendo la relacion de aspecto, recortando el exceso
 ->rounded-2:redondear
+-> bg-body-tertiary: fondo neutro muy suave
+
+------ Minireto 7 ------
+Paso 4: conflictos
+-> enlace portada: se perdia, lo modifique directo en el HTML con class.
+-> tarjetas flotas: problemas con el fondo de las tarjetas, para solucionarlo agregue .card al CSS con las reglas de fondo
+-> titulo tarjetas flotas: cree en el CSS .car-title y copie mi fuente, color y grosor
+-> Boton reservas: para que tomara mi configuracion use la class btn-reservar porpia en el HTML
+-> fondo beneficios: tenia  bg-body-tertiary por lo que no me cogia el color de las card que le habia puesto al CSS, simplemente se lo elimine.
+-> Recorridos: al convertir los recoridos en card se me desalineo el contenido, lo soluciones con flex.

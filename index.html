@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@700&family=Open+Sans:ital,wght@400;600&display=swap" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- enlace hoja de estilos -->
@@ -29,17 +29,19 @@
         </nav>
     </header>
     <main>
-        <section id="portada">
-            <div>
-                <div>
-                    <h1>Rueda Libre </h1>
-                    <p>Alquiler de bicicletas en Medellín</p>
+        <section class="py-5 text-center text-md-start">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h2 class="display-4 fw-bold">Explora Medellín a tu propio ritmo</h2>
+                        <p class="lead">Alquila la bicicleta perfecta para tu aventura urbana o de montaña. Fácil, rápido y con la mejor tarifa de la ciudad.</p>
+                        <p class="lead">Explora nuestras <a href="paginas/tarifas.html" class="text-black px-1 py-1 fw-bold">tarifas</a> y reserva tu bicicleta hoy mismo para disfrutar de la libertad de recorrer Medellín a tu propio ritmo.</p>
+                    </div>
+                    <div class="col-12 col-md-6 d-none d-md-block text-center">
+                        <img src="../img/Img_portada.jpg" alt="Bicicleta en Medellín: disfruta de la ciudad a tu ritmo" class="img-fluid">
+                    </div>
                 </div>
-                <h2>Explora Medellín a tu propio ritmo</h2>
-                <p>Alquila la bicicleta perfecta para tu aventura urbana o de montaña. Fácil, rápido y con la mejor tarifa de la ciudad.</p>
-                <p>Explora nuestras <a href="paginas/tarifas.html">tarifas</a> y reserva tu bicicleta hoy mismo para disfrutar de la libertad de recorrer Medellín a tu propio ritmo.</p>
             </div>
-            <img src="img/Img_portada.jpg" alt="Bicicleta en Medellín: disfruta de la ciudad a tu ritmo">
         </section>
         <section>
             <header>
@@ -48,13 +50,37 @@
             <p>En Rueda Libre creemos que la mejor forma de latir al ritmo de Medellín <em>es sintiendo su brisa. </em>Somos más que un servicio de alquiler de bicicletas; somos tu pasaporte para explorar la ciudad desde otra perspectiva, conectar con sus espacios verdes, su cultura y su gente de una manera sostenible, activa y divertida. Olvídate del tráfico y el estrés: súmate al movimiento ciclista y descubre los encantos de la Ciudad de la Eterna Primavera a tu propio ritmo.</p>
             <p>En Rueda Libre ofrecemos una amplia variedad de bicicletas para alquilar en Medellín. Ya sea que busques una bicicleta de montaña, urbana o eléctrica, tenemos la opción perfecta para ti. <a href="#encuentranos">Encuéntranos</a></p>
             <p>Nuestro proceso de alquiler es rápido y sencillo. Solo necesitas elegir tu bicicleta, seleccionar el tiempo de alquiler y disfrutar de tu paseo por la ciudad.</p>
-            <h3>¿Por qué elegir Rueda Libre?</h3>
-            <ul>
-                <li><strong>Ubicación estratégica:</strong>Nos encontramos en un punto clave de la ciudad, con fácil acceso directo a las principales ciclovías y rutas turísticas.</li>
-                <li><strong>Seguridad y confianza: </strong>Todas nuestras bicicletas pasan por rigurosas revisiones técnicas antes de cada entrega para garantizar tu tranquilidad.</li>
-                <li><strong>Tarifas accesibles: </strong>Planes diseñados para todos los bolsillos, sin letras pequeñas ni cobros ocultos.</li>
-                <li><strong>Sostenibilidad real:</strong>Alquilando con nosotros reduces tu huella de carbono y contribuyes a una movilidad más limpia y amigable para Medellín.</li>
-            </ul>
+            <section>
+            <div class="container py-4">
+                <h2 class="mb-4">¿Porque elegirnos?</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <article class="card h-100 p-4">
+                            <h3 class="card-tittle text-center">Ubicación estratégica</h3>
+                            <p class="card-text text-secondary">Nos encontramos en un punto clave de la ciudad, con fácil acceso directo a las principales ciclovías y rutas turísticas.</p>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 p-4">
+                            <h3 class="card-tittle text-center">Seguridad y confianza</h3>
+                            <p class="card-text text-secondary">Todas nuestras bicicletas pasan por rigurosas revisiones técnicas antes de cada entrega para garantizar tu tranquilidad.</p>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 p-4">
+                            <h3 class="card-tittle text-center">Tarifas accesibles</h3>
+                            <p class="card-text text-secondary">Planes diseñados para todos los bolsillos, sin letras pequeñas ni cobros ocultos.</p>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 p-4">
+                            <h3 class="card-tittle text-center">Sostenibilidad real</h3>
+                            <p class="card-text text-secondary">Alquilando con nosotros reduces tu huella de carbono y contribuyes a una movilidad más limpia y amigable para Medellín.</p>
+                        </article>
+                    </div>
+                </div>
+            </div> 
+        </section>
         </section>
         <section>
             <header>
@@ -92,87 +118,137 @@
             </div>
         </section>
         <section>
-            <header>
-                <h2>Nuestra flota</h2>
-            </header>
-            <div id="flota">
-                <article>
-                    <h3>Urbana Clasica</h3>
-                    <img src="img/UrbanaClasica.jpg" alt="Bicicleta Urbana clasica: ideal para el uso diario en la ciudad">
-                    <p> Cómoda y liviaba para las ciclorutas.</p>
-                    <p><strong>Precio por hora: </strong>$10.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Urbana Plegable</h3>
-                    <img src="img/UrbanaPlegable.jpg" alt="Bicicleta Urbana plegable: ideal para transporte público">
-                    <p> Se dobla en segundos; ideal para combinar con el metro.</p>
-                    <p><strong>Precio por hora: </strong>$12.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Montaña Trail</h3>
-                    <img src="img/MontañaTrail.jpg" alt="Bicicleta de montaña Trail">
-                    <p> Suspensión delantera y 21 cambios para subidas</p>
-                    <p><strong>Precio por hora: </strong>$15.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Grabel Aventura</h3>
-                    <img src="img/GravelAventura.webp" alt="Bicicleta Grabel Aventura">
-                    <p> Para rutas mixtas de asfalto y destapado.</p>
-                    <p><strong>Precio por hora: </strong>$18.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Eléctrica Urbana</h3>
-                    <img src="img/Electrica.jpg" alt="Bicicleta Eléctrica Urbana">
-                    <p> Asistencia eléctrica con 45 km de autonomía.</p>
-                    <p><strong>Precio por hora: </strong>$25.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Infantiles</h3>
-                    <img src="img/Infantil.jpg" alt="Bicicleta Infantil: para niños de 6 a 10 años">
-                    <p> Para niños de 6 a 10 años.</p>
-                    <p><strong>Precio por hora: </strong>$8.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Tándem</h3>
-                    <img src="img/tandem.webp" alt="Bicicleta para dos personas">
-                    <p> Para dos personas, perfecta para pasear en pareja</p>
-                    <p><strong>Precio por hora: </strong>$20.000</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
+            <div class="container py-4">
+                <header>
+                    <h2 class="mb-4">Nuestra flota</h2> 
+                </header>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/UrbanaClasica.jpg" alt="Bicicleta Urbana clasica: ideal para el uso diario en la ciudad" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h5">Urbana Clasica</h3>
+                                <p class="card-text text-secondary"> Cómoda y liviaba para las ciclorutas.</p>
+                                <p><strong>Precio por hora: </strong>$10.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/UrbanaPlegable.jpg" alt="Bicicleta Urbana plegable: ideal para transporte público" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h5">Urbana Plegable</h3>
+                                <p class="card-text text-secondary"> Se dobla en segundos; ideal para combinar con el metro.</p>
+                                <p><strong>Precio por hora: </strong>$12.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/MontañaTrail.jpg" alt="Bicicleta de montaña Trail" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h5">Montaña Trail</h3>
+                                <p class="card-text text-secondary"> Suspensión delantera y 21 cambios para subidas</p>
+                                <p><strong>Precio por hora: </strong>$15.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/GravelAventura.webp" alt="Bicicleta Grabel Aventura" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h5">Grabel Aventura</h3>
+                                <p class="card-text text-secondary"> Para rutas mixtas de asfalto y destapado.</p>
+                                <p><strong>Precio por hora: </strong>$18.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/Electrica.jpg" alt="Bicicleta Eléctrica Urbana" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h5">Eléctrica Urbana</h3>
+                                <p class="card-text text-secondary"> Asistencia eléctrica con 45 km de autonomía.</p>
+                                <p><strong>Precio por hora: </strong>$25.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/Infantil.jpg" alt="Bicicleta Infantil: para niños de 6 a 10 años" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title h5">Infantiles</h3>
+                                <p class="card-text text-secondary"> Para niños de 6 a 10 años.</p>
+                                <p><strong>Precio por hora: </strong>$8.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100">
+                            <img src="img/tandem.webp" alt="Bicicleta para dos personas" class="card-img-top object-fit-cover" style="height: 200px;">
+                            <div class="card-body d-flex flex-column">  
+                                <h3 class="card-title h5">Tándem</h3>
+                                <p class="card-text text-secondary"> Para dos personas, perfecta para pasear en pareja</p>
+                                <p><strong>Precio por hora: </strong>$20.000</p>
+                                <a href="paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
-            <header>
-                <h2>Conoce nuestros recorridos</h2>    
-            </header>
-            <div id="recorridos">
-                <article>
-                    <h3>Río y parques</h3>
-                    <img src="img/RecorridoRio.jpg" alt="Recorrido guido por el rio y los principales parques de Medellín">
-                    <p> Disfruta un recorrido tranquilo de 12 km durante 2 horas por Medellín, explorando sus parques, zonas verdes y paisajes urbanos. Ideal para principiantes y amantes de la naturaleza.</p>
-                    <p><strong>Nivel: </strong>Fácil</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Sabores del barrio</h3>
-                    <img src="img/SaboresBarrio.jpg" alt="Bicicleta Urbana plegable: ideal para transporte público">
-                    <p> Recorre 18 km en 3 horas para descubrir la cultura, los sabores y las tradiciones de los barrios de Medellín. Una experiencia de dificultad media que combina aventura y gastronomía local.</p>
-                    <p><strong>Nivel: </strong>Medio</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
-                <article>
-                    <h3>Reto palmas</h3>
-                    <img src="img/Retopalmas.webp" alt="Bicicleta de montaña Trail">
-                    <p> Acepta el desafío de pedalear 25 km durante 4 horas por una ruta exigente hacia Las Palmas. Ideal para ciclistas experimentados que buscan superar sus límites y disfrutar de los paisajes montañosos de Medellín.</p>
-                    <p><strong>Nivel: </strong>Díficil</p>
-                    <a href="/paginas/reservas.html" class="btn-reservar">Reserva</a></p>
-                </article>
+            <div class="container py-4">
+                <header>
+                    <h2 class="mb-4">Conoce nuestros recorridos</h2>    
+                </header>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100 p-2 d-flex flex-column">
+                            <div class="titulo-recorrido d-flex align-items-center">
+                                <h3 class="card-title h4 m-3">Río y parques</h3>
+                            </div>
+                            <img src="img/RecorridoRio.jpg" alt="Recorrido guido por el rio y los principales parques de Medellín" class="img-fluid object-fit-cover mb-2" style="height: 180px;">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text text-secondary"> Disfruta un recorrido tranquilo de 12 km durante 2 horas por Medellín, explorando sus parques, zonas verdes y paisajes urbanos. Ideal para principiantes y amantes de la naturaleza.</p>
+                                <p><strong>Nivel: </strong>Fácil</p>
+                                <a href="/paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div >
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100 p-2 d-flex flex-column">
+                            <div class="titulo-recorrido d-flex align-items-center">
+                                <h3 class="card-title h4 m-3">Sabores del barrio</h3>
+                            </div>
+                            <img src="img/SaboresBarrio.jpg" alt="Bicicleta Urbana plegable: ideal para transporte público" class="img-fluid object-fit-cover mb-2" style="height: 180px;">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text text-secondary"> Recorre 18 km en 3 horas para descubrir la cultura, los sabores y las tradiciones de los barrios de Medellín. Una experiencia de dificultad media que combina aventura y gastronomía local.</p>
+                                <p><strong>Nivel: </strong>Medio</p>
+                                <a href="/paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6  col-lg-4 col-xl-3">
+                        <article class="card h-100 p-2 d-flex flex-column">
+                            <div class="titulo-recorrido d-flex align-items-center">
+                                <h3 class="card-title h4 m-3">Reto palmas</h3>
+                            </div>
+                            <img src="img/Retopalmas.webp" alt="Bicicleta de montaña Trail" class="img-fluid object-fit-cover mb-2" style="height: 180px;">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text text-secondary"> Acepta el desafío de pedalear 25 km durante 4 horas por una ruta exigente hacia Las Palmas. Ideal para ciclistas experimentados que buscan superar sus límites y disfrutar de los paisajes montañosos de Medellín.</p>
+                                <p><strong>Nivel: </strong>Díficil</p>
+                                <a href="/paginas/reservas.html" class="btn-reservar mt-auto text-center">Reserva</a></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -213,5 +289,6 @@
             </dl>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

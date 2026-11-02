@@ -115,7 +115,7 @@ footer h3, h4, a{
     color: var(--color-boton-principal);
 }
 
-/*portada*/
+/*portada se conserva porque todavia la usa tarifas y reservas*/
 #portada {
     display:flex; /*cambio mobile fisrt*/
     flex-direction: column; /*cambio mobile fisrt*/
@@ -159,78 +159,25 @@ footer h3, h4, a{
 }
 
 /*tarjetas de la flota*/
-#flota {
-    display: grid;
-    grid-template-columns: 1fr; /*cambio mobile fisrt*/
-    gap: var(--espacio-mediano); 
-    padding: var(--espacio-grande) var(--espacio-mediano);
-}
-
-#flota article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 3px solid var(--color-boton-principal); 
-    border-radius: 8px; 
-    padding: var(--espacio-mediano); 
+.card{
     background-color: var(--color-fondo);
-    overflow: hidden; /*oculte todo el contenido que se desborde*/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+    border:3px solid var(--color-boton-principal);
+    
 }
 
-#flota img {
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 4px; 
-    margin-bottom: var(--espacio-pequeno); 
+.card-title{
+    font-family: var(--fuente-titulos);
+    color: var(--color-titulos);
+    font-weight: 700;
 }
 
-#flota a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding: var(--espacio-pequeno) var(--espacio-mediano);
-
-
-}
 
 /*tarjetas recorridos*/
-#recorridos{
-    display: grid;
-    grid-template-columns: 1fr; /*cambio mobile fisrt*/
-    gap: var(--espacio-mediano); 
-    padding: var(--espacio-grande) var(--espacio-mediano);
-}
-
-#recorridos article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 3px solid var(--color-boton-principal); 
-    border-radius: 8px; 
-    padding: var(--espacio-mediano); 
-    background-color: var(--color-fondo);
-    overflow: hidden; /*oculte todo el contenido que se desborde*/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
-}
-
-
-#recorridos img {
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 4px; 
-    margin-bottom: var(--espacio-pequeno); 
-}
-
-#recorridos a {
-    display: inline-block;
-    width: 100%;
+.titulo-recorrido {
+    min-height: 4rem;
+    max-height: 4rem;
     text-align: center;
-    padding: var(--espacio-pequeno) var(--espacio-mediano);
 }
-
 
 /* tabla tarifas*/
 .contenedor_tabla {
