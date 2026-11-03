@@ -228,3 +228,19 @@ Paso 4: conflictos
 -> Boton reservas: para que tomara mi configuracion use la class btn-reservar porpia en el HTML
 -> fondo beneficios: tenia  bg-body-tertiary por lo que no me cogia el color de las card que le habia puesto al CSS, simplemente se lo elimine.
 -> Recorridos: al convertir los recoridos en card se me desalineo el contenido, lo soluciones con flex.
+
+
+------ Minireto 8 ------
+Paso 4: 
+-> lineas CSS Original: 7 lineas para organizar reservas
+-> Lineas CSS con Bootstrap:
+-> Tiempo original:
+-> Tiempo con Bootstrap
+-> Ventajas
+
+
+
+
+
+
+

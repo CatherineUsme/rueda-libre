@@ -290,16 +290,6 @@ caption {
 }
 
 /*Pagina Reservas*/
-
-#reservas {
-    display:flex; /*cambio mobile fisrt*/
-    flex-direction: column; /*cambio mobile fisrt*/
-    gap: var(--espacio-mediano);
-    align-items: stretch; /*cambio mobile fisrt*/
-    padding: var(--espacio-grande) var(--espacio-mediano);
-    background-color: var(--color-fondo);
-}
-
 /* Formulario */
 input, select, textarea {
     width: 100%;

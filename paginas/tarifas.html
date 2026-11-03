@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@700&family=Open+Sans:ital,wght@400;600&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- enlace hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -26,100 +27,103 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Nuestras tarifas</h1>
-        <section id="tarifas alquiler">
-            <header>
-                <h2>Tarifas alquiler de bicicletas</h2>
-            </header>
-            <div class="contenedor_tabla">
-                <table>
-                    <caption >Alquiler de bicicletas en Medellín</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Tipo de bicicleta</th>
-                            <th scope="col">Tarifa por hora</th>
-                            <th scope="col">Tarifa por medio día (4h)</th>
-                            <th scope="col">Tarifa por día</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Bicicleta urbana</td>
-                            <td>$10.000</td>
-                            <td>$30.000</td>
-                            <td>$50.000</td>
-                        </tr>
-                        <tr>
-                            <td>Bicicleta de montaña</td>
-                            <td>$15.000</td>
-                            <td>$45.000</td>
-                            <td>$70.000</td>
-                        </tr>
-                        <tr>
-                            <td id="celda_bicicleta_electrica">Bicicleta eléctrica<span id="nuevo">Nuevo</span></td>
-                            <td>$25.000</td>
-                            <td>$70.000</td>
-                            <td>$100.000</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-12 col-lg-9">
+                <h1 class="display-4 fw-bold">Nuestras tarifas</h1>
+                <section>
+                    <header>
+                        <h2>Tarifas alquiler de bicicletas</h2>
+                    </header>
+                    <div class="contenedor_tabla">
+                        <table>
+                            <caption >Alquiler de bicicletas en Medellín</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tipo de bicicleta</th>
+                                    <th scope="col">Tarifa por hora</th>
+                                    <th scope="col">Tarifa por medio día (4h)</th>
+                                    <th scope="col">Tarifa por día</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bicicleta urbana</td>
+                                    <td>$10.000</td>
+                                    <td>$30.000</td>
+                                    <td>$50.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Bicicleta de montaña</td>
+                                    <td>$15.000</td>
+                                    <td>$45.000</td>
+                                    <td>$70.000</td>
+                                </tr>
+                                <tr>
+                                    <td id="celda_bicicleta_electrica">Bicicleta eléctrica<span id="nuevo">Nuevo</span></td>
+                                    <td>$25.000</td>
+                                    <td>$70.000</td>
+                                    <td>$100.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="tarifas_recorridos_guiados">
+                    <header>
+                        <h2>Recorridos guiados por Medellín</h2>
+                    </header>
+                    <div class="contenedor_tabla">
+                        <table>
+                            <caption>Recorridos guiados por Medellín</caption>
+                            <thead>
+                                <tr>
+                                    <th>Recorrido</th>
+                                    <th>Distancia</th>
+                                    <th>Duración</th>
+                                    <th>Nivel de dificultad</th>
+                                    <th>Precio por persona</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Río y parques</td>
+                                    <td>12 km</td>
+                                    <td>2h</td>
+                                    <td>Fácil</td>
+                                    <td>$45.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Sabores de Barrio</td>
+                                    <td>18 km</td>
+                                    <td>3h</td>
+                                    <td>Medio</td>
+                                    <td>$60.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Reto Las Palmas</td>
+                                    <td>25 km</td>
+                                    <td>4h</td>
+                                    <td>Difícil</td>
+                                    <td>$85.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </div>
-
-        </section>
-        <br>
-        <section id="tarifas_recorridos_guiados">
-            <header>
-                <h2>Recorridos guiados por Medellín</h2>
-            </header>
-            <div class="contenedor_tabla">
-                <table>
-                    <caption>Recorridos guiados por Medellín</caption>
-                    <thead>
-                        <tr>
-                            <th>Recorrido</th>
-                            <th>Distancia</th>
-                            <th>Duración</th>
-                            <th>Nivel de dificultad</th>
-                            <th>Precio por persona</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Río y parques</td>
-                            <td>12 km</td>
-                            <td>2h</td>
-                            <td>Fácil</td>
-                            <td>$45.000</td>
-                        </tr>
-                        <tr>
-                            <td>Sabores de Barrio</td>
-                            <td>18 km</td>
-                            <td>3h</td>
-                            <td>Medio</td>
-                            <td>$60.000</td>
-                        </tr>
-                        <tr>
-                            <td>Reto Las Palmas</td>
-                            <td>25 km</td>
-                            <td>4h</td>
-                            <td>Difícil</td>
-                            <td>$85.000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <p>Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m. Qué llevar: ropa cómoda, agua, protector solar y documento de identidad.</p>
-        <p>No te lo pierdas, <a href="/paginas/reservas.html" class="btn-reservar">Reserva ahora</a></p>
-        <aside>
-            <h3>¿Qué llevar?</h3>
-            <ul>
-                <li>Ropa deportiva y cómoda.</li>
-                <li>Protector solar y gafas de sol.</li>
-                <li>Documento de identidad.</li>
-            </ul>
-       </aside>
+            <aside class="col-12 col-lg-3">
+                <h3>Importante</h3>
+                <p>Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m. Qué llevar: ropa cómoda, agua, protector solar y documento de identidad.</p>
+                <p>No te lo pierdas, <a href="/paginas/reservas.html" class="btn-reservar">Reserva ahora</a></p>
+                <h3>¿Qué llevar?</h3>
+                <ul>
+                    <li>Ropa deportiva y cómoda.</li>
+                    <li>Protector solar y gafas de sol.</li>
+                    <li>Documento de identidad.</li>
+                </ul>
+            </aside>
+        </div>
     </main>
     <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
     <footer>
@@ -141,6 +145,6 @@
             </dl>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

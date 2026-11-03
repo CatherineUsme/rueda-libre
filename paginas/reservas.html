@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@700&family=Open+Sans:ital,wght@400;600&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- enlace hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -26,10 +28,10 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container my-5">
         <h1>Realiza tu reserva</h1>
-        <section id="reservas">
-            <section>
+        <div class="row g-4">
+            <section class="col-12 col-md-8">
                 <header>
                     <h2>Formulario de reserva</h2>
                 </header>
@@ -103,7 +105,7 @@
                     </fieldset>
                 </form>
             </section>
-            <section>
+            <section class="col-12 col-md-4">
                 <header>
                     <h3>Horario de atención</h3>
                 </header>
@@ -115,7 +117,7 @@
                 </dl>
                 <p>¿Tienes dudas sobre nuestras reservas? <a href="mailto:info@ruedalibre.com">Contactános</a></p>
             </section>
-       </section>
+        </div>
     </main>
     <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
     <footer>
@@ -137,5 +139,6 @@
             </dl>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
