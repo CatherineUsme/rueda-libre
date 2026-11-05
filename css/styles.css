@@ -335,17 +335,6 @@ fieldset {
   border-radius: 4px;
 }
 
-.fila-formulario {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben */
-  gap: var(--espacio-mediano); /* Espacio entre los elementos */
-}
-
-.campo {
-  flex: 1;     /* Hace que ambos campos crezcan por igual y abarquen todo el ancho */
-  width: 100%;
-}
-
 button[type="submit"] {
   padding: var(--espacio-mediano) var(--espacio-grande);
   background-color: var(--color-titulos);

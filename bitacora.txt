@@ -232,11 +232,11 @@ Paso 4: conflictos
 
 ------ Minireto 8 ------
 Paso 4: 
--> lineas CSS Original: 7 lineas para organizar reservas
--> Lineas CSS con Bootstrap:
--> Tiempo original:
--> Tiempo con Bootstrap
--> Ventajas
+-> lineas CSS Original: 7 lineas para organizar reservas, 10 lineas campos del formulario
+-> Lineas CSS con Bootstrap: lineas en HTML
+-> Tiempo original: 2 dias
+-> Tiempo con Bootstrap: 1 dia
+-> conclusion: Bootstrap tiene la centaja de que vas organizando a medida que vas maquetando pero los estilos con muy estaticos, lo que hace que se pierda identidad de una pagina a otra.
 
 
 

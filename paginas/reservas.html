@@ -38,12 +38,12 @@
                 <form method="post" action="#">
                     <fieldset>
                         <legend>Tus datos</legend>
-                        <div class="fila-formulario">
-                            <div class="campo">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6">
                                 <label for="documento">Documento de identidad:</label>
                                 <input type="text" inputmode="numeric" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Debe tener entre 6 y 10 dígitos numéricos">
                             </div>
-                            <div class="campo">
+                            <div class="col-12 col-md-6">
                                 <label for="celular">Celular:</label>
                                 <input type="tel" id="celular" name="celular" required maxlength="10" pattern="3[0-9]{9}" title="Debe comenzar con 3 y tener 10 dígitos numéricos">
                             </div>
@@ -55,12 +55,12 @@
                     </fieldset>
                     <fieldset>
                         <legend>Tus alquiler</legend>
-                        <div class="fila-formulario">
-                            <div class="campo">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-4">
                                 <label   label for="fecha">Fecha alquiler:</label>
                                 <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31"><br>
                             </div>
-                            <div class="campo">
+                            <div class="col-12 col-md-8">
                                 <label for="bicicleta">Tipo de bicicleta:</label>
                                 <select id="bicicleta" name="bicicleta" required>
                                 <option value="">Seleccione una opción</option>
@@ -70,8 +70,8 @@
                                 </select><br>
                             </div>
                         </div>
-                        <div class="fila-formulario">
-                            <div class="campo">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-8">
                                 <label for="plan">Plan:</label>
                                 <select id="plan" name="plan" required>
                                 <option value="">Seleccione una opción</option>
@@ -80,7 +80,7 @@
                                 <option value="dia">Plan por día</option>
                                 </select>
                             </div>
-                            <div class="campo">
+                            <div class="col-12 col-md-4">
                                 <label for="cantidad">Cantidad de bicicletas:</label>
                                 <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
                             </div>
@@ -115,7 +115,8 @@
                     <dt>sábado, domingo y festivos</dt>
                     <dd>6:00 a. m. a 2:00 p. m.</dd>
                 </dl>
-                <p>¿Tienes dudas sobre nuestras reservas? <a href="mailto:info@ruedalibre.com">Contactános</a></p>
+                <p>¿Tienes dudas sobre nuestras reservas?</p>
+                <a href="mailto:info@ruedalibre.com" class="btn-reservar">Contactános</a>
             </section>
         </div>
     </main>
